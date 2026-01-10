@@ -108,26 +108,26 @@
                 </a>
               </span> -->
                             <!-- Code Link. -->
-                            <!-- <span class="link-block">
-                <a href="https://github.com/THUDM/MotionBench"
+                            <span class="link-block">
+                <a href="https://anonymous.4open.science/r/PRC-Bench-B327"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
-              </span> -->
+              </span>
                             <!-- Dataset Link. -->
-                            <!-- <span class="link-block">
+                            <span class="link-block">
                 <a href="https://huggingface.co/datasets/THUDM/MotionBench"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"> -->
+                  <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
-                      <!-- <p style="font-size:18px">📊</p>
+                      <p style="font-size:18px">📊</p>
                   </span>
                   <span>Dataset</span>
                 </a>
-              </span> -->
+              </span>
                             <!-- Leaderboard Link. -->
                             <!-- <span class="link-block">
                 <a href="#leaderboard"
@@ -164,18 +164,37 @@
                 <h2 class="title is-3">Introduction</h2>
                 <div class="content has-text-justified">
                     Understanding research papers remains challenging for foundation models due to specialized scientific discourse and complex figures and tables, yet existing benchmarks offer limited fine-grained evaluation at scale.
-                    To address this gap, we introduce RPC-Bench, a large-scale question-answering benchmark derived from review–rebuttal exchanges of high-quality computer science papers.
-                    We design a fine-grained taxonomy aligned with the scientific research flow to assess models’ ability to answer why, what, and how questions.
+                    To address this gap, we introduce RPC-Bench, a large-scale question-answering benchmark built from review–rebuttal exchanges of high-quality computer science papers, containing 15K human-verified QA pairs.
+                    We design a fine-grained taxonomy aligned with the scientific research flow to assess models’ ability to understand and answer why, what, and how questions in scholarly contexts.
                     We also define an elaborate LLM–human interaction annotation framework to support large-scale labeling and quality control.
                     Following the LLM-as-a-Judge paradigm, we develop a scalable framework that evaluates models on correctness-completeness and conciseness, with high agreement to human judgment.
-                    Experiments reveal that even the strongest models (GPT-5) achieve only 66.54\% correctness-completeness, dropping to 35.05\% after conciseness adjustment, highlighting substantial gaps in precise academic paper understanding.
-                    
+                    Experiments reveal that even the strongest models (GPT-5) achieve only 68.2% correctness-completeness, dropping to 37.46% after conciseness adjustment, highlighting substantial gaps in precise academic paper understanding.
                 </div>
             </div>
         </div>
         <!--/ Abstract. -->
     </div>
 </section>
+
+<style>
+.type-text {
+    background-color: #e3f2fd;   /* 浅蓝 */
+    color: #0d47a1;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+.type-visual {
+    background-color: #fce4ec;   /* 浅粉 */
+    color: #880e4f;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.85em;
+}
+</style>
 
 <!--leader board-->
 <section class="section">
@@ -214,469 +233,454 @@
 
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/technology/developers/gemini-3-pro-vision/">Gemini-3-Pro-Preview</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://openai.com/index/introducing-gpt-5/">GPT-5</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p></b></td>
+                            <!-- <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/technology/developers/gemini-3-pro-vision/">Gemini-3-Pro-Preview</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td> -->
                             <!-- <td style="vertical-align: middle;">-</td> -->
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2025-12-5</td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <td style="vertical-align: middle;">2025-8-7</td>
                             <!-- <td style="vertical-align: middle;"><b class="">69.9</b></td>
                             <td style="vertical-align: middle;"><b class="">70.4</b></td> -->
-                            <td style="vertical-align: middle;">70.9</td>
-                            <td style="vertical-align: middle;">73.9</td>
-                            <td style="vertical-align: middle;">66.7</td>
-                            <td style="vertical-align: middle;">83.4</td>
-                            <td style="vertical-align: middle;">55.0</td>
+                            <td style="vertical-align: middle;">54.93</td>
+                            <td style="vertical-align: middle;">69.10</td>
+                            <td style="vertical-align: middle;">67.33</td>
+                            <td style="vertical-align: middle;">68.20</td>
+                            <td style="vertical-align: middle;"><b class="">37.46</b></td>
+                            <!-- <td style="vertical-align: middle;">61.2</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://openai.com/index/introducing-gpt-5-2/">GPT-5.2</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p></b></td>
+                            <!-- <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/technology/developers/gemini-3-pro-vision/">Gemini-3-Pro-Preview</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td> -->
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <td style="vertical-align: middle;">2025-12-11</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">69.9</b></td>
+                            <td style="vertical-align: middle;"><b class="">70.4</b></td> -->
+                            <td style="vertical-align: middle;">53.81</td>
+                            <td style="vertical-align: middle;">66.84</td>
+                            <td style="vertical-align: middle;">64.03</td>
+                            <td style="vertical-align: middle;">65.40</td>
+                            <td style="vertical-align: middle;"><b class="">35.19</b></td>
+                            <!-- <td style="vertical-align: middle;">61.2</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://openai.com/index/introducing-gpt-5/">GPT-5</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <td style="vertical-align: middle;">2025-8-7</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">69.9</b></td>
+                            <td style="vertical-align: middle;"><b class="">70.4</b></td> -->
+                            <td style="vertical-align: middle;">61.47</td>
+                            <td style="vertical-align: middle;">58.90</td>
+                            <td style="vertical-align: middle;">55.34</td>
+                            <td style="vertical-align: middle;">57.07</td>
+                            <td style="vertical-align: middle;"><b class="">35.08</b></td>
                             <!-- <td style="vertical-align: middle;">61.2</td> -->
                         </tr>
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/">Gemini-2.5-Pro</a>
                             <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td>
-                            <td style="vertical-align: middle;">-</td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
                             <!-- <td style="vertical-align: middle;">-</td> -->
                             <td style="vertical-align: middle;">2025-3-25</td>
                             <!-- <td style="vertical-align: middle;"><b class="">65.8</b></td>
                             <td style="vertical-align: middle;"><b class="">66.3</b></td> -->
-                            <td style="vertical-align: middle;">67.0</td>
-                            <td style="vertical-align: middle;">67.5</td>
-                            <td style="vertical-align: middle;">65.6</td>
-                            <td style="vertical-align: middle;">77.5</td>
-                            <td style="vertical-align: middle;">53.9</td>
+                            <td style="vertical-align: middle;">54.87</td>
+                            <td style="vertical-align: middle;">62.65</td>
+                            <td style="vertical-align: middle;">59.03</td>
+                            <td style="vertical-align: middle;">60.79</td>
+                            <td style="vertical-align: middle;"><b class="">33.35</b></td>
                             <!-- <td style="vertical-align: middle;">57.0</td> -->
                         </tr>
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://openai.com/index/gpt-5-1/">GPT-5.1</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p></b></td>
-                            <td style="vertical-align: middle;">-</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/products-and-platforms/products/gemini/gemini-3/">Gemini-3-Pro</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
                             <!-- <td style="vertical-align: middle;">-</td> -->
-                            <td style="vertical-align: middle;">2025-11-12</td>
-                            <!-- <td style="vertical-align: middle;"><b class="">66.2</b></td>
-                            <td style="vertical-align: middle;"><b class="">66.2</b></td> -->
-                            <td style="vertical-align: middle;">69.6</td>
-                            <td style="vertical-align: middle;">68.8</td>
-                            <td style="vertical-align: middle;">53.6</td>
-                            <td style="vertical-align: middle;">76.6</td>
-                            <td style="vertical-align: middle;">54.6</td>
-                            <!-- <td style="vertical-align: middle;">56.7</td> -->
+                            <td style="vertical-align: middle;">2025-11-18</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">65.8</b></td>
+                            <td style="vertical-align: middle;"><b class="">66.3</b></td> -->
+                            <td style="vertical-align: middle;">52.81</td>
+                            <td style="vertical-align: middle;">62.69</td>
+                            <td style="vertical-align: middle;">60.28</td>
+                            <td style="vertical-align: middle;">61.46</td>
+                            <td style="vertical-align: middle;"><b class="">32.46</b></td>
+                            <!-- <td style="vertical-align: middle;">57.0</td> -->
                         </tr>
-                        <!-- <tr>
+                        <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://www.anthropic.com/news/claude-opus-4-5">Claude-Opus-4.5</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Anthropic</p></b></td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2025-11-25</td>
-                            <td style="vertical-align: middle;"><b class=""> - </b></td>
-                            <td style="vertical-align: middle;"><b class="">65.9</b></td>
-                            <td style="vertical-align: middle;">66.5</td>
-                            <td style="vertical-align: middle;">71.0</td>
-                            <td style="vertical-align: middle;">71.0</td>
-                            <td style="vertical-align: middle;">79.7</td>
-                            <td style="vertical-align: middle;">55.0</td>
-                            <td style="vertical-align: middle;">36.9</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://api-docs.deepseek.com/news/news251201">DeepSeek-V3.2</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">DeepSeek-AI</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-12-1</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">65.8</b></td>
+                            <td style="vertical-align: middle;"><b class="">66.3</b></td> -->
+                            <td style="vertical-align: middle;">56.31</td>
+                            <td style="vertical-align: middle;">58.73</td>
+                            <td style="vertical-align: middle;">55.19</td>
+                            <td style="vertical-align: middle;">56.91</td>
+                            <td style="vertical-align: middle;"><b class="">32.04</b></td>
+                            <!-- <td style="vertical-align: middle;">57.0</td> -->
                         </tr>
-
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://openai.com/index/introducing-gpt-5-2/">GPT-5.2</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <td style="vertical-align: middle;">2025-12-11</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">69.9</b></td>
+                            <td style="vertical-align: middle;"><b class="">70.4</b></td> -->
+                            <td style="vertical-align: middle;">56.43</td>
+                            <td style="vertical-align: middle;">56.75</td>
+                            <td style="vertical-align: middle;">52.82</td>
+                            <td style="vertical-align: middle;">54.72</td>
+                            <td style="vertical-align: middle;"><b class="">30.88</b></td>
+                            <!-- <td style="vertical-align: middle;">61.2</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://api-docs.deepseek.com/news/news250821">DeepSeek-V3.1</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">DeepSeek-AI</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-8-21</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">65.8</b></td>
+                            <td style="vertical-align: middle;"><b class="">66.3</b></td> -->
+                            <td style="vertical-align: middle;">54.76</td>
+                            <td style="vertical-align: middle;">57.85</td>
+                            <td style="vertical-align: middle;">54.85</td>
+                            <td style="vertical-align: middle;">56.31</td>
+                            <td style="vertical-align: middle;"><b class="">30.84</b></td>
+                            <!-- <td style="vertical-align: middle;">57.0</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/zai-org/GLM-V">GLM-4.6V</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">106B(A12B)</td> -->
+                            <td style="vertical-align: middle;">2025-12-8</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">61.42</b></td> -->
+                            <!-- <td style="vertical-align: middle;"><b class="">62.39</b></td> -->
+                            <td style="vertical-align: middle;">64.55</td>
+                            <td style="vertical-align: middle;">47.32</td>
+                            <td style="vertical-align: middle;">43.43</td>
+                            <td style="vertical-align: middle;">45.29</td>
+                            <td style="vertical-align: middle;"><b class="">29.23</b></td>
+                            <!-- <td style="vertical-align: middle;">40.37</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://z.ai/blog/glm-4.7">GLM-4.7</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">106B(A12B)</td> -->
+                            <td style="vertical-align: middle;">2025-12-22</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">61.42</b></td> -->
+                            <!-- <td style="vertical-align: middle;"><b class="">62.39</b></td> -->
+                            <td style="vertical-align: middle;">54.34</td>
+                            <td style="vertical-align: middle;">54.36</td>
+                            <td style="vertical-align: middle;">51.75</td>
+                            <td style="vertical-align: middle;">53.02</td>
+                            <td style="vertical-align: middle;"><b class="">28.81</b></td>
+                            <!-- <td style="vertical-align: middle;">40.37</td> -->
+                        </tr>
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a href="https://github.com/zai-org/GLM-V">GLM-4.5V</a>
                             <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">106B(A12B)</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">61.42</b></td>
-                            <td style="vertical-align: middle;"><b class="">62.39</b></td>
-                            <td style="vertical-align: middle;">65.08</td>
-                            <td style="vertical-align: middle;">65.16</td>
-                            <td style="vertical-align: middle;">58.72</td>
-                            <td style="vertical-align: middle;">77.38</td>
-                            <td style="vertical-align: middle;">48.34</td>
-                            <td style="vertical-align: middle;">40.37</td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">106B(A12B)</td> -->
+                            <td style="vertical-align: middle;">2025-8-11</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">61.42</b></td> -->
+                            <!-- <td style="vertical-align: middle;"><b class="">62.39</b></td> -->
+                            <td style="vertical-align: middle;">59.44</td>
+                            <td style="vertical-align: middle;">48.79</td>
+                            <td style="vertical-align: middle;">43.62</td>
+                            <td style="vertical-align: middle;">46.06</td>
+                            <td style="vertical-align: middle;"><b class="">27.38</b></td>
+                            <!-- <td style="vertical-align: middle;">40.37</td> -->
                         </tr>
-
-
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/products-and-platforms/products/gemini/gemini-3/">gemini-3-pro</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td>
+                            <!-- <td style="vertical-align: middle;">2fps</td> -->
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <td style="vertical-align: middle;">2025-11-18</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">56.12</b></td>
+                            <td style="vertical-align: middle;"><b class="">57.21</b></td> -->
+                            <td style="vertical-align: middle;">50.22</td>
+                            <td style="vertical-align: middle;">56.06</td>
+                            <td style="vertical-align: middle;">52.69</td>
+                            <td style="vertical-align: middle;">54.32</td>
+                            <td style="vertical-align: middle;"><b class="">27.28</b></td>
+                            <!-- <td style="vertical-align: middle;">29.14</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://z.ai/blog/glm-4.5">GLM-4.5</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">106B(A12B)</td> -->
+                            <td style="vertical-align: middle;">2025-7-28</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">61.42</b></td> -->
+                            <!-- <td style="vertical-align: middle;"><b class="">62.39</b></td> -->
+                            <td style="vertical-align: middle;">43.41</td>
+                            <td style="vertical-align: middle;">58.95</td>
+                            <td style="vertical-align: middle;">59.54</td>
+                            <td style="vertical-align: middle;">59.24</td>
+                            <td style="vertical-align: middle;"><b class="">25.72</b></td>
+                            <!-- <td style="vertical-align: middle;">40.37</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/">gemini-2.5-pro</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td>
+                            <!-- <td style="vertical-align: middle;">2fps</td> -->
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <td style="vertical-align: middle;">2025-3-25</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">56.12</b></td>
+                            <td style="vertical-align: middle;"><b class="">57.21</b></td> -->
+                            <td style="vertical-align: middle;">51.71</td>
+                            <td style="vertical-align: middle;">48.39</td>
+                            <td style="vertical-align: middle;">45.59</td>
+                            <td style="vertical-align: middle;">46.95</td>
+                            <td style="vertical-align: middle;"><b class="">24.28</b></td>
+                            <!-- <td style="vertical-align: middle;">29.14</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://www.anthropic.com/news/claude-4">Claude-Sonnet-4</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Anthropic</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-5-23</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">41.37</td>
+                            <td style="vertical-align: middle;">58.53</td>
+                            <td style="vertical-align: middle;">58.44</td>
+                            <td style="vertical-align: middle;">58.48</td>
+                            <td style="vertical-align: middle;"><b class="">24.19</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/QwenLM/Qwen3">Qwen3</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p></b></td>
+                            <!-- <td style="vertical-align: middle;">64</td> -->
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <td style="vertical-align: middle;">2025-7-21</td>
+                            <!-- <td style="vertical-align: middle;"><b class="">56.14</b></td>
+                            <td style="vertical-align: middle;"><b class="">56.1</b></td> -->
+                            <td style="vertical-align: middle;">41.44</td>
+                            <td style="vertical-align: middle;">55.88</td>
+                            <td style="vertical-align: middle;">56.64</td>
+                            <td style="vertical-align: middle;">56.26</td>
+                            <td style="vertical-align: middle;"><b class="">23.31</b></td>
+                            <!-- <td style="vertical-align: middle;">28.73</td> -->
+                        </tr>
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Claude-Sonnet-4.5</a>
                             <p style="font-size: 12px; margin-left: 5px; color: #858383;">Anthropic</p></b></td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">-</td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
                             <td style="vertical-align: middle;">2025-9-30</td>
-                            <td style="vertical-align: middle;"><b class=""> - </b></td>
-                            <td style="vertical-align: middle;"><b class="">61.1</b></td>
-                            <td style="vertical-align: middle;">63.2</td>
-                            <td style="vertical-align: middle;">66.5</td>
-                            <td style="vertical-align: middle;">59.2</td>
-                            <td style="vertical-align: middle;">74.3</td>
-                            <td style="vertical-align: middle;">54.4</td>
-                            <td style="vertical-align: middle;">29.4</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">31.02</td>
+                            <td style="vertical-align: middle;">64.31</td>
+                            <td style="vertical-align: middle;">64.97</td>
+                            <td style="vertical-align: middle;">64.64</td>
+                            <td style="vertical-align: middle;"><b class="">20.05</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
-
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/ByteDance-Seed/Seed1.5-VL">Seed1.5-VL</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">ByteDance</p></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">58.81</b></td>
-                            <td style="vertical-align: middle;"><b class="">59.44</b></td>
-                            <td style="vertical-align: middle;">61.37</td>
-                            <td style="vertical-align: middle;">66.67</td>
-                            <td style="vertical-align: middle;">58.61</td>
-                            <td style="vertical-align: middle;">73.79</td>
-                            <td style="vertical-align: middle;">49.38</td>
-                            <td style="vertical-align: middle;">26.74</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Claude-Sonnet-4.5</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Anthropic</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-9-30</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">31.95</td>
+                            <td style="vertical-align: middle;">55.35</td>
+                            <td style="vertical-align: middle;">54.45</td>
+                            <td style="vertical-align: middle;">54.89</td>
+                            <td style="vertical-align: middle;"><b class="">17.54</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
-                        
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://openai.com/zh-Hant/index/introducing-gpt-5/">gpt-5-chat</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">58.81</b></td>
-                            <td style="vertical-align: middle;"><b class="">59.44</b></td>
-                            <td style="vertical-align: middle;">61.37</td>
-                            <td style="vertical-align: middle;">66.67</td>
-                            <td style="vertical-align: middle;">58.61</td>
-                            <td style="vertical-align: middle;">73.79</td>
-                            <td style="vertical-align: middle;">49.38</td>
-                            <td style="vertical-align: middle;">26.74</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://www.anthropic.com/news/claude-4">Claude-Sonnet-4</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Anthropic</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-5-23</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">31.63</td>
+                            <td style="vertical-align: middle;">54.16</td>
+                            <td style="vertical-align: middle;">53.32</td>
+                            <td style="vertical-align: middle;">53.74</td>
+                            <td style="vertical-align: middle;"><b class="">16.99</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
-
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/zai-org/GLM-V">GLM-4.1V-Thinking</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">9B</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">58.68</b></td>
-                            <td style="vertical-align: middle;"><b class="">59.44</b></td>
-                            <td style="vertical-align: middle;">62.48</td>
-                            <td style="vertical-align: middle;">62.98</td>
-                            <td style="vertical-align: middle;">53.85</td>
-                            <td style="vertical-align: middle;">76.18</td>
-                            <td style="vertical-align: middle;">46.23</td>
-                            <td style="vertical-align: middle;">33.51</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/ianliuwd/HippoRAG2">HippoRAG2</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">The Ohio State University</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-6-19</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">45.77</td>
+                            <td style="vertical-align: middle;">33.13</td>
+                            <td style="vertical-align: middle;">27.88</td>
+                            <td style="vertical-align: middle;">30.28</td>
+                            <td style="vertical-align: middle;"><b class="">13.86</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
-                        
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash">gemini-2.5-flash</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">56.12</b></td>
-                            <td style="vertical-align: middle;"><b class="">57.21</b></td>
-                            <td style="vertical-align: middle;">59.25</td>
-                            <td style="vertical-align: middle;">59.97</td>
-                            <td style="vertical-align: middle;">59.9</td>
-                            <td style="vertical-align: middle;">72.55</td>
-                            <td style="vertical-align: middle;">44.4</td>
-                            <td style="vertical-align: middle;">29.14</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/qhjqhj00/MemoRAG">MemoRAG</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Peking University & Hong Kong Polytechnic University</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-4-9</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">51.31</td>
+                            <td style="vertical-align: middle;">24.19</td>
+                            <td style="vertical-align: middle;">19.10</td>
+                            <td style="vertical-align: middle;">21.35</td>
+                            <td style="vertical-align: middle;"><b class="">10.96</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
-                        
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/QwenLM/Qwen2.5-VL">Qwen2.5-VL-72B</a>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://vdocrag.github.io/">VdocRAG</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">NTT Corporation & Tohoku University</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-4-14</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">61.54</td>
+                            <td style="vertical-align: middle;">21.17</td>
+                            <td style="vertical-align: middle;">13.88</td>
+                            <td style="vertical-align: middle;">16.77</td>
+                            <td style="vertical-align: middle;"><b class="">10.32</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/OpenBMB/VisRAG">VisRAG</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua University & ModelBest Inc.</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-3-2</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">39.90</td>
+                            <td style="vertical-align: middle;">26.24</td>
+                            <td style="vertical-align: middle;">23.63</td>
+                            <td style="vertical-align: middle;">24.87</td>
+                            <td style="vertical-align: middle;"><b class="">9.92</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/parthsarthi03/raptor">Raptor</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Stanford University</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-text">TEXT</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2024-1-31</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">36.47</td>
+                            <td style="vertical-align: middle;">25.28</td>
+                            <td style="vertical-align: middle;">20.82</td>
+                            <td style="vertical-align: middle;">22.84</td>
+                            <td style="vertical-align: middle;"><b class="">8.33</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/Yuliang-Liu/Monkey">Monkey</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Huazhong University of Science and Technology</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2024-8-26</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">54.61</td>
+                            <td style="vertical-align: middle;">17.08</td>
+                            <td style="vertical-align: middle;">11.27</td>
+                            <td style="vertical-align: middle;">13.58</td>
+                            <td style="vertical-align: middle;"><b class="">7.41</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/OpenGVLab/Docopilot">Docopilot</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Laboratory</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-7-19</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">39.31</td>
+                            <td style="vertical-align: middle;">18.31</td>
+                            <td style="vertical-align: middle;">17.12</td>
+                            <td style="vertical-align: middle;">17.69</td>
+                            <td style="vertical-align: middle;"><b class="">6.96</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/QwenLM/Qwen3">Qwen3</a>
                             <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p></b></td>
-                            <td style="vertical-align: middle;">64</td>
-                            <td style="vertical-align: middle;">72B</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">56.14</b></td>
-                            <td style="vertical-align: middle;"><b class="">56.1</b></td>
-                            <td style="vertical-align: middle;">59.48</td>
-                            <td style="vertical-align: middle;">58.96</td>
-                            <td style="vertical-align: middle;">47.95</td>
-                            <td style="vertical-align: middle;">72.89</td>
-                            <td style="vertical-align: middle;">45.53</td>
-                            <td style="vertical-align: middle;">28.73</td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2025-7-21</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">22.64</td>
+                            <td style="vertical-align: middle;">20.17</td>
+                            <td style="vertical-align: middle;">20.14</td>
+                            <td style="vertical-align: middle;">20.16</td>
+                            <td style="vertical-align: middle;"><b class="">4.56</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
                         <tr>
                             <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/MoonshotAI/Kimi-VL">Kimi-VL-2506</a>
-                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Kimi</p></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">16B (A3B)</td>
-                            <td style="vertical-align: middle;">2025-8-27</td>
-                            <td style="vertical-align: middle;"><b class="">54.6</b></td>
-                            <td style="vertical-align: middle;"><b class="">54.26</b></td>
-                            <td style="vertical-align: middle;">58.7</td>
-                            <td style="vertical-align: middle;">55.78</td>
-                            <td style="vertical-align: middle;">45.64</td>
-                            <td style="vertical-align: middle;">73.48</td>
-                            <td style="vertical-align: middle;">42.08</td>
-                            <td style="vertical-align: middle;">22.52</td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://github.com/X-PLUG/mPLUG-DocOwl">DocOwl2</a>
+                            <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p></b></td>
+                            <td style="vertical-align: middle;"><span class="type-visual">VISUAL</span></td>
+                            <!-- <td style="vertical-align: middle;">-</td> -->
+                            <td style="vertical-align: middle;">2024-9-9</td>
+                            <!-- <td style="vertical-align: middle;"><b class=""> - </b></td>
+                            <td style="vertical-align: middle;"><b class="">61.1</b></td> -->
+                            <td style="vertical-align: middle;">50.19</td>
+                            <td style="vertical-align: middle;">11.75</td>
+                            <td style="vertical-align: middle;">6.66</td>
+                            <td style="vertical-align: middle;">8.50</td>
+                            <td style="vertical-align: middle;"><b class="">4.27</b></td>
+                            <!-- <td style="vertical-align: middle;">29.4</td> -->
                         </tr>
-
-
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://bigmodel.cn/dev/howuse/glm-4v"
-                                    class="ext-link" style="font-size: 16px;">GLM-4V-Plus-0111
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">2fps</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2025-1-29</td>
-
-                            <td style="vertical-align: middle;"><b class="">62.8</b></td>
-                            <td style="vertical-align: middle;"><b class="">62.5</b></td>
-                            <td style="vertical-align: middle;">64.1</td>
-                            <td style="vertical-align: middle;">67</td>
-                            <td style="vertical-align: middle;">67.4</td>
-                            <td style="vertical-align: middle;">73.5</td>
-                            <td style="vertical-align: middle;">46.7</td>
-                            <td style="vertical-align: middle;">42.8</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://huggingface.co/OpenGVLab/InternVL2_5-78B"
-                                    class="ext-link" style="font-size: 16px;">InternVL2.5-78B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Lab</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">16</td>
-                            <td style="vertical-align: middle;">72B</td>
-                            <td style="vertical-align: middle;">2025-1-24</td>
-
-                            <td style="vertical-align: middle;"><b class="">60.9</b></td>
-                            <td style="vertical-align: middle;"><b class="">61</b></td>
-                            <td style="vertical-align: middle;">65.2</td>
-                            <td style="vertical-align: middle;">64.6</td>
-                            <td style="vertical-align: middle;">55.6</td>
-                            <td style="vertical-align: middle;">75.7</td>
-                            <td style="vertical-align: middle;">46.9</td>
-                            <td style="vertical-align: middle;">33.7</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://github.com/THUDM/MotionBench"
-                                    class="ext-link" style="font-size: 16px;">TE Fusion
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai & Tsinghua</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">16</td>
-                            <td style="vertical-align: middle;">9B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-                            <td style="vertical-align: middle;"><b class="">58</b></td>
-                            <td style="vertical-align: middle;"><b class="">58</b></td>
-                            <td style="vertical-align: middle;">64</td>
-                            <td style="vertical-align: middle;">59</td>
-                            <td style="vertical-align: middle;">51</td>
-                            <td style="vertical-align: middle;">69</td>
-                            <td style="vertical-align: middle;">41</td>
-                            <td style="vertical-align: middle;">39</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct"
-                                    class="ext-link" style="font-size: 16px;">Qwen2-VL-72B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">1fps</td>
-                            <td style="vertical-align: middle;">72B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-                            <td style="vertical-align: middle;"><b class="">57</b></td>
-                            <td style="vertical-align: middle;"><b class="">58</b></td>
-                            <td style="vertical-align: middle;">58</td>
-                            <td style="vertical-align: middle;">61</td>
-                            <td style="vertical-align: middle;">63</td>
-                            <td style="vertical-align: middle;">72</td>
-                            <td style="vertical-align: middle;">47</td>
-                            <td style="vertical-align: middle;">31</td>
-                        </tr>
-
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://huggingface.co/OpenGVLab/InternVL2-40B"
-                                    class="ext-link" style="font-size: 16px;">InternVL2-40B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Lab</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">16</td>
-                            <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-                            <td style="vertical-align: middle;"><b class="">55</b></td>
-                            <td style="vertical-align: middle;"><b class="">54</b></td>
-                            <td style="vertical-align: middle;">54</td>
-                            <td style="vertical-align: middle;">58</td>
-                            <td style="vertical-align: middle;">49</td>
-                            <td style="vertical-align: middle;">76</td>
-                            <td style="vertical-align: middle;">41</td>
-                            <td style="vertical-align: middle;">30</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://bigmodel.cn/dev/api#glm-4v"
-                                    class="ext-link" style="font-size: 16px;">GLM-4V-Plus
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">30</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-                            <td style="vertical-align: middle;"><b class="">54</b></td>
-                            <td style="vertical-align: middle;"><b class="">55</b></td>
-                            <td style="vertical-align: middle;">57</td>
-                            <td style="vertical-align: middle;">57</td>
-                            <td style="vertical-align: middle;">54</td>
-                            <td style="vertical-align: middle;">69</td>
-                            <td style="vertical-align: middle;">40</td>
-                            <td style="vertical-align: middle;">37</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://arxiv.org/abs/2408.01800"
-                                                                               class="ext-link"
-                                                                               style="font-size: 16px;">MiniCPM-V2.6
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">64</td>
-                            <td style="vertical-align: middle;">7B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">52</b></td>
-                            <td style="vertical-align: middle;"><b class="">53</b></td>
-                            <td style="vertical-align: middle;">56</td>
-                            <td style="vertical-align: middle;">49</td>
-                            <td style="vertical-align: middle;">45</td>
-                            <td style="vertical-align: middle;">72</td>
-                            <td style="vertical-align: middle;">39</td>
-                            <td style="vertical-align: middle;">33</td>
-                        </tr>
-
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://github.com/magic-research/PLLaVA" class="ext-link"
-                                    style="font-size: 16px;">PLLaVA 34B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">16</td>
-                            <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">52</b></td>
-                            <td style="vertical-align: middle;"><b class="">51</b></td>
-                            <td style="vertical-align: middle;">55</td>
-                            <td style="vertical-align: middle;">51</td>
-                            <td style="vertical-align: middle;">47</td>
-                            <td style="vertical-align: middle;">66</td>
-                            <td style="vertical-align: middle;">38</td>
-                            <td style="vertical-align: middle;">31</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf"
-                                    class="ext-link" style="font-size: 16px;">Gemini 1.5 Pro
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">1fps</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-                            <td style="vertical-align: middle;"><b class="">51</b></td>
-                            <td style="vertical-align: middle;"><b class="">50</b></td>
-                            <td style="vertical-align: middle;">51</td>
-                            <td style="vertical-align: middle;">52</td>
-                            <td style="vertical-align: middle;">54</td>
-                            <td style="vertical-align: middle;">67</td>
-                            <td style="vertical-align: middle;">40</td>
-                            <td style="vertical-align: middle;">22</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://github.com/Oryx-mllm/Oryx"
-                                    class="ext-link"
-                                    style="font-size: 16px;">Oryx-34B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua University &
-                                    Tencent & NTU</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">64</td>
-                            <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">49</b></td>
-                            <td style="vertical-align: middle;"><b class="">49</b></td>
-                            <td style="vertical-align: middle;">48</td>
-                            <td style="vertical-align: middle;">52</td>
-                            <td style="vertical-align: middle;">44</td>
-                            <td style="vertical-align: middle;">65</td>
-                            <td style="vertical-align: middle;">42</td>
-                            <td style="vertical-align: middle;">32</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://llava-vl.github.io/blog/2024-04-30-llava-next-video/"
-                                    class="ext-link"
-                                    style="font-size: 16px;">LLaVA-NeXT-Video-DPO (34B)
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">32</td>
-                            <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">48</b></td>
-                            <td style="vertical-align: middle;"><b class="">40</b></td>
-                            <td style="vertical-align: middle;">53</td>
-                            <td style="vertical-align: middle;">45</td>
-                            <td style="vertical-align: middle;">36</td>
-                            <td style="vertical-align: middle;">66</td>
-                            <td style="vertical-align: middle;">39</td>
-                            <td style="vertical-align: middle;">23</td>
-                        </tr>
-
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://cogvlm2-video.github.io/"
-                                    class="ext-link" style="font-size: 16px;">CogVLM2-Video
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Z.ai</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">24</td>
-                            <td style="vertical-align: middle;">8B</td>
-                            <td style="vertical-align: middle;">2024-11-25</td>
-
-                            <td style="vertical-align: middle;"><b class="">41</b></td>
-                            <td style="vertical-align: middle;"><b class="">44</b></td>
-                            <td style="vertical-align: middle;">43</td>
-                            <td style="vertical-align: middle;">39</td>
-                            <td style="vertical-align: middle;">38</td>
-                            <td style="vertical-align: middle;">64</td>
-                            <td style="vertical-align: middle;">37</td>
-                            <td style="vertical-align: middle;">33</td>
-                        </tr> -->
-
 
                         </tbody>
                     </table>
@@ -797,7 +801,7 @@
                     <div>
                         <div class="content has-text-centered">
                             <img src="static/image/taxonomy.png" style="width: 100%;"/>
-                            <p style="margin-bottom: 30px;">We design a taxonomy aligned with the natural research flow of academic papers. It begins with <strong><em>what-questions</em></strong>, which focus on clarifying fundamental concepts and contextual background. It then advances to <strong><em>how-questions</em></strong>, which probe the mechanics of methods and experimental setups. Finally, it deepens into <strong><em>why-questions</em></strong>, which examine the underlying motivations of methods and the reasoning behind results. 
+                            <p style="margin-bottom: 30px;">We design a taxonomy aligned with the natural research flow of academic papers. It begins with <strong><em>what-questions</em></strong>, which focus on clarifying fundamental concepts and contextual background. It then advances to <strong><em>how-questions</em></strong>, which probe the mechanics of methods and experimental setups. Finally, it deepens into <strong><em>why-questions</em></strong>, which examine the underlying motivations of methods and the reasoning behind results. The form of <strong>[What-4.27%]</strong> indicates question types and QA percentage.
                             </p>
                         </div>
                     </div>
@@ -826,7 +830,9 @@
                             <img src="static/image/data_statistics.png" style="width: 60%;"/>
                             <p style="margin-bottom: 30px;">A/M Q: average/max question length. A/M A: average/max answer length. Lengths are measured in words.
                             </p>
-                            <img src="static/image/pie_chart.png" style="width: 100%;"/>
+                            <img src="static/image/pie_chart.png" style="width: 60%;"/>
+                            <p style="margin-bottom: 30px;">Domain distribution of RPC-Bench. ML: Machine Learning; CV: Computer Vision; NLP: Natural Language Processing; RL: Reinforcement Learning.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1038,9 +1044,9 @@
     </div>
 </section> -->
 
-<!-- <footer class="footer">
+<!-- <footer class="footer"> -->
     <!-- <div class="container"> -->
-    <div class="content has-text-centered">
+    <!-- <div class="content has-text-centered">
     </div>
     <div class="columns is-centered">
         <div class="column is-8">
@@ -1053,9 +1059,9 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- </div> -->
-</footer> -->
+<!-- </footer> -->
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
